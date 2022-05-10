@@ -1,6 +1,6 @@
 provider "intersight" {
-  apikey        = var.intersight_secret
-  secretkey     = var.intersight_key
+  apikey        = var.intersight_key
+  secretkey     = var.intersight_secret
   endpoint      = var.endpoint
 }
 
