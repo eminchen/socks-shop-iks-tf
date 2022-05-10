@@ -1,4 +1,4 @@
-resource "kubernetes_namespace" "SocksNS" {
+resource "kubernetes_namespace" "sock_ns" {
   metadata {
     annotations = {
     //  name = "example-annotation"
