@@ -1,10 +1,16 @@
-terraform {
-  required_version = ">=0.14.5"
 
+terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "Toronto_DCLAB"
+    workspaces {
+      name = "socks-shop-iks-tf"
+    }
+  }
   required_providers {
     intersight = {
-      source  = "CiscoDevNet/intersight"
-      version = ">=1.0.11"
+      source = "CiscoDevNet/intersight"
+      # version = "1.0.12"
     }
   }
 }
