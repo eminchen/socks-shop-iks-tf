@@ -1,8 +1,8 @@
-variable "api_key_id" {
+variable "intersight_key" {
   type =  string
  
 }  
-variable "api_private_key" {
+variable "intersight_secret" {
   type  = string
 }
 variable "endpoint" {
