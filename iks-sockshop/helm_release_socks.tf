@@ -22,6 +22,6 @@ resource "helm_release" "socks-demo" {
     value = "secretpassword"
   }
 */
-depends_on = [kubernetes_namespace.sock_ns]
+#depends_on = [kubernetes_namespace.sock_ns]
 
 }
