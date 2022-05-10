@@ -5,7 +5,7 @@ resource "kubernetes_namespace" "SocksNS" {
     }
 
     labels = {
-      "istio.io/rev"="cp-v111x.istio-system"
+      "istio.io/rev"="cp-v112x.istio-system"
     }
 
     name = var.namespace
