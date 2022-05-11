@@ -39,11 +39,11 @@ carts:
     containerPort: 80
     resources:
         limits:
-            cpu: 300m
-            memory: 2000Mi
+            cpu: 600m
+            memory: 4000Mi
         requests:
-            cpu: 300m
-            memory: 2000Mi
+            cpu: 600m
+            memory: 4000Mi
 
 cataloguedb:
     image:
