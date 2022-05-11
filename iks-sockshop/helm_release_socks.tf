@@ -3,7 +3,7 @@ resource "helm_release" "socks-demo" {
   chart = "./helm-chart"
   namespace = var.namespace
   create_namespace = false
-  timeout = 600
+  timeout = 1200
 
 //set {
  // name = "opencartHost"
