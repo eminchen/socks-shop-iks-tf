@@ -26,11 +26,3 @@ provider "helm" {
     client_key             = base64decode(yamldecode(base64decode(data.intersight_kubernetes_cluster.IKSCluster.results.0.kube_config)).users[0].user.client-key-data)
   }
 }
-
-data "kubernetes_service" "socks-lb" {
-  metadata {
-    namespace = var.namespace
-    name = "front-end"
-  }
-  depends_on = [helm_release.socks-demo]
-}
