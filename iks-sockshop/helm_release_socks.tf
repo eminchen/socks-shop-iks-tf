@@ -2,7 +2,7 @@ resource "helm_release" "socks-demo" {
   name = "socks-demo"
   chart = "./helm-chart"
   namespace = var.namespace
-  create_namespace = true
+  create_namespace = false
   timeout = 1200
 
 //set {
